@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frameTop {
+    width: 20%;
+    height: 18px;
+    background-color: #FDBD03;
+}
+
+.frame {
+    display: flex;
+    justify-content: end;
+}
+
+.frameBottom {
+    width: 60%;
+    height: 18px;
+    background-color: #FDBD03;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: end;
+}
+
+.whatsappIcon {
+    width: 90px;
+    height: 90px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 2em 0 0 3em;
+    padding: 20px;
+}
+
+.whatsappIcon img {
+    width: 45px;
+    height: 45px;
+}
+
+.whatsappIcon img:hover {
+    opacity: 0.6;
+}
+
+#container {
+    display: flex;
+
+}
+
+.container-img {
+    width: 30vw;
+}
+
+.container-img>img {
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    margin: 3em;
+
+}
+
+.container-form {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* padding: 0 5em; */
+
+}
+
+.container-form-title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.container-form-title>h1 {
+    font: normal normal 900 36px/53px Heebo;
+    color: #FDBD03;
+}
+
+.container-form-title>p {
+    width: 45%;
+    font: normal normal normal 20px/29px Heebo;
+    color: #020253;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.NameAndEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.form-control>label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+}
+
+.form-control-text>label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+}
+
+.form-control>input {
+    width: 418px;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #FDBD03;
+}
+
+.form-control-text>input {
+    width: 854px;
+    height: 143px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #FDBD03;
+}
+
+.buttom-submit>button {
+    width: 166px;
+    height: 50px;
+    background-color: #FDBD03;
+    font: normal normal bold 22px/30px Heebo;
+    color: #000;
+    border: 0;
+    margin: 3em 0;
+
+}
+
+.socialNetworks {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.socialNetworks .fa {
+    /* display: flex; */
+    padding: 25px;
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    /* align-items: center; */
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: #FDBD03;
+    color: #000;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.socialNetworks .fa:hover {
+    opacity: 0.6;
+}

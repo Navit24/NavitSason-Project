@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 140vh;
+}
+
+#container {
+    display: flex;
+}
+
+/* img of background */
+.container-backgroud>img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* contant us form */
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 85vh;
+    margin: 10em 14em;
+    background-color: #1A1A1AD4;
+    position: absolute;
+    z-index: 2;
+}
+
+/* title of the form  */
+.container-form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 78%;
+}
+
+.container-form-title>h1 {
+    font: normal normal 900 36px/53px Heebo;
+    color: #FFFFFF;
+}
+
+.container-form-title>p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #F9F9F9;
+}
+
+/* form */
+form .form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+form .form-control>label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #FFFFFF;
+}
+
+form .form-control>input {
+    width: 418px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 1px solid #D31C75;
+}
+
+/* button submit */
+.buttom-submit>button {
+    width: 166px;
+    height: 50px;
+    background-color: #D31C75;
+    font: normal normal bold 22px/30px Heebo;
+    color: #fff;
+    border: 0
+}
+
+/* responsive to mobile */
+@media (max-width:768px) {
+    body {
+        height: auto;
+    }
+
+    /* img of background */
+    .container-backgroud>img {
+        width: 100vw;
+        height: 213px;
+        object-fit: cover;
+    }
+
+    /* contant us form */
+    .container-form {
+        width: 80vw;
+        height: 441px;
+        margin: 5em 2em 2em;
+    }
+
+    /* title of the form  */
+    .container-form-title {
+        width: 75%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container-form-title>h1 {
+        font: normal normal 900 25px/30px Heebo;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .container-form-title>p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    /* form */
+    form .form-control>label {
+        font: normal normal bold 14px/21px Heebo;
+    }
+
+    form .form-control>input {
+        width: 60vw;
+        height: 28px;
+    }
+
+    /* button submit */
+    form .buttom-submit>button {
+        width: 76px;
+        height: 33px;
+        font: normal normal bold 15px/20px Heebo;
+    }
+}
