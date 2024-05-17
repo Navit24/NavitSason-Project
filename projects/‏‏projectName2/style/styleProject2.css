@@ -29,12 +29,12 @@
 }
 
 .container-title>h2 {
-    font: normal normal normal 32px/38px Varela Round;
+    font: normal normal normal 32px/38px "Varela Round";
     color: #FFFFFF;
 }
 
 .container-title>p {
-    font: normal normal normal 16px/20px Varela Round;
+    font: normal normal normal 16px/20px "Varela Round";
     color: #F9F9F9;
     padding: 15px;
 }
@@ -54,7 +54,7 @@ form .form-control {
 }
 
 form .form-control>label {
-    font: normal normal normal 16px/20px Varela Round;
+    font: normal normal normal 16px/20px "Varela Round";
     color: #F9F9F9;
 }
 

@@ -5,36 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ייעוץ חינם</title>
+
     <!-- hyperlink to font heebo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="images/consultationIcon.png">
-    <link rel="stylesheet" href="style/styleProject6.css">
+
+    <!-- hyperlink to logo -->
+    <link rel="icon" href="./images/consultationIcon.png">
+
+    <!-- hyperlink to style css -->
+    <link rel="stylesheet" href="./style/styleProject6.css">
 </head>
 
 <body>
-    <div class="frameTop">
+    <!-- frame -->
+    <div class="frame-top">
+    </div>
 
-    </div>
     <div class="whatsapp">
-        <div class="whatsappIcon">
-            <a href="#"><img src="images/whatsapp.png" alt="whatapp icon"></a>
+        <div class="whatsapp-icon">
+            <a href="#"><img src="./images/whatsapp.png" alt="whatapp icon"></a>
         </div>
     </div>
-    <div id="container">
+
+    <section id="container">
+
+        <!-- container-img -->
         <div class="container-img">
-            <img src="images/chatImage.png" alt="chat-Illustration">
+            <img src="./images/chat image.png" alt="chat-Illustration">
         </div>
+
+        <!-- contant us form -->
         <div class="container-form">
+
+            <!-- title of the form -->
             <div class="container-form-title">
                 <h1>ייעוץ חינם</h1>
                 <p>לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה.</p>
             </div>
+
+            <!-- form -->
             <form>
-                <div class="NameAndEmail">
+                <div class="name-email">
                     <div class="form-control">
                         <label for="name">שם מלא</label>
                         <input type="text" id="name" name="name" required>
@@ -44,25 +58,28 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                 </div>
-                <div class="form-control form-control-text">
+                <div class="form-control">
                     <label for="text">נושא הפנייה בקצרה</label>
-                    <input type="text" id="text" name="text" required>
+                    <textarea name="text" id="text"></textarea>
                 </div>
+
+                <!-- button submit -->
                 <div class="buttom-submit">
                     <button type="submit" value="Submit">שליחה</button>
                 </div>
             </form>
         </div>
+    </section>
 
-    </div>
-    <div class="socialNetworks">
+    <footer class="social-networks">
         <a href="#" class="fa fa-phone"></a>
         <a href="#" class="fa fa-linkedin"></a>
         <a href="#" class="fa fa-instagram"></a>
         <a href="#" class="fa fa-facebook"></a>
-    </div>
+    </footer>
+    <!-- frame bottom -->
     <div class="frame">
-        <div class="frameBottom">
+        <div class="frame-bottom">
         </div>
     </div>
 </body>

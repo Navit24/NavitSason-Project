@@ -136,7 +136,7 @@ header .logo {
 
 /* Resume download button */
 .btn-download {
-    width: 13vw;
+    width: 10vw;
     height: 6vh;
     text-align: center;
     background-color: #331C52;
@@ -292,6 +292,15 @@ textarea {
     margin: 1em 0;
 }
 
+/* .container-img {
+    display: flex;
+    justify-content: center;
+} */
+
+.container-img>img {
+margin: 6em 0;
+}
+
 /* footer */
 footer {
     display: flex;
@@ -330,7 +339,7 @@ footer .social-networks .fa:hover {
 
 /* .frame {} */
 
-.frameBottom {
+.frame-bottom {
     width: 100vw;
     height: 25px;
     background-color: #291C3A;
@@ -339,7 +348,6 @@ footer .social-networks .fa:hover {
 
 }
 
-.frameBottom>p {
+.frame-bottom>p {
     color: #FFFFFF;
 }
-

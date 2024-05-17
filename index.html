@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- hyperlink to logo -->
-    <link rel="icon" href="images/Navit Sason  purple logo.png">
+    <link rel="icon" href="./images/Navit Sason purple logo.png">
 
     <!-- hyperlink to style css -->
     <link rel="stylesheet" href="style/style.css">
@@ -30,7 +30,7 @@
     <header>
         <!-- navigation bar -->
         <nav class="navigation">
-            <a href="index.html">ראשי</a>
+            <a href="./index.html">ראשי</a>
             <a href="#">אודות</a>
             <a href="#">עבודות</a>
             <a href="#">צור קשר</a>
@@ -40,8 +40,8 @@
         <!-- my logo and name -->
         <div class="logo">
             <div class="img-logo">
-                <a href="index.html"><img class="img1" src="images/my name.png" alt="my name"></a>
-                <a href="index.html"><img class="img2" src="images/Navit Sason  white logo.png" alt="white logo"></a>
+                <a href="index.html"><img class="img1" src="./images/my name.png" alt="my name"></a>
+                <a href="index.html"><img class="img2" src="./images/Navit Sason white logo.png" alt="white logo"></a>
             </div>
         </div>
 
@@ -57,16 +57,16 @@
 
     <!-- icons of my skills -->
     <aside class="skills-icons">
-        <img src="images/icons of skills/html.png" alt="html icon">
-        <img src="images/icons of skills/css.png" alt="css icon">
-        <img src="images/icons of skills/sass.png" alt="sass icon">
-        <img src="images/icons of skills/bootstrap.png" alt="bootstrap icon">
-        <img src="images/icons of skills/vs code.png" alt="vs code icon">
+        <img src="./images/icons of skills/html.png" alt="html icon">
+        <img src="./images/icons of skills/css.png" alt="css icon">
+        <img src="./images/icons of skills/sass.png" alt="sass icon">
+        <img src="./images/icons of skills/bootstrap.png" alt="bootstrap icon">
+        <img src="./images/icons of skills/vs code.png" alt="vs code icon">
     </aside>
 
     <!-- about me area -->
     <section class="about">
-        <img src="images/Navit Sason  purple logo.png" alt="purple logo">
+        <img src="./images/Navit Sason purple logo.png" alt="purple logo">
         <h1>קצת עלי</h1>
         <p>המסע שלי בפיתוח אתרים התחיל כשגיליתי את התשוקה שלי לקידוד ועיצוב במהלך השנים. מאז שקעתי בשפות תכנות שונות,
             כולל HTML,
@@ -80,7 +80,7 @@
         </p>
 
         <!-- Resume download button -->
-        <button class="btn-download">להורדת קורות חיים</button>
+        <button onclick="myResume()" class="btn-download">להורדת קורות חיים</button>
     </section>
 
     <!-- My project gallery-->
@@ -93,65 +93,77 @@
         <div class="container">
             <section class="d-flex justify-content-evenly my-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="images/screenshot projects/project1 screenshot.png" class="card-img-top" alt="...">
+                    <img src="./images/screenshot projects/project1 screenshot.png" class="card-img-top"
+                        alt="screenshot image">
                     <div class="card-body">
                         <h5 class="card-title text-center">שיווק לעסקים</h5>
                         <p class="card-text">תן לנו להוביל אותך קדימה</p>
                         <div class="d-grid gap-2">
-                            <a href="projects pages/project1 page/index.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                            <a href="./projects pages/project1 page/index.html" class="btn btn-primary">לעמוד
+                                הפרויקט</a>
                         </div>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="images/screenshot projects/project2 screenshot.png" class="card-img-top" alt="...">
+                    <img src="./images/screenshot projects/project2 screenshot.png" class="card-img-top"
+                        alt="screenshot image">
                     <div class="card-body">
                         <h5 class="card-title text-center">Here & Now</h5>
                         <p class="card-text">בואו להנות משלל מתנות מקוריות</p>
                         <div class="d-grid gap-2">
-                            <a href="projects pages/project2 page/index.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                            <a href="./projects pages/project2 page/index.html" class="btn btn-primary">לעמוד
+                                הפרויקט</a>
                         </div>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="images/screenshot projects/project3 screenshot.png" class="card-img-top" alt="...">
+                    <img src="./images/screenshot projects/project3 screenshot.png" class="card-img-top"
+                        alt="screenshot image">
                     <div class="card-body">
                         <h5 class="card-title text-center">קפה לבוקר טוב יותר</h5>
                         <p class="card-text">קופון לקפה חינם ומפנק</p>
                         <div class="d-grid gap-2">
-                            <a href="projects pages/project3 page/index.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                            <a href="./projects pages/project3 page/index.html" class="btn btn-primary">לעמוד
+                                הפרויקט</a>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="d-flex justify-content-evenly">
                 <div class="card" style="width: 18rem;">
-                    <img src="images/screenshot projects/project4 screenshot.png" class="card-img-top" alt="...">
+                    <img src="./images/screenshot projects/project4 screenshot.png" class="card-img-top"
+                        alt="screenshot image">
                     <div class="card-body">
                         <h5 class="card-title text-center">פתרונות לעסקים</h5>
                         <p class="card-text">הצעה מותאמת לעסק שלכם</p>
                         <div class="d-grid gap-2">
-                            <a href="projects pages/project4 page/index.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                            <a href="./projects pages/project4 page/index.html" class="btn btn-primary">לעמוד
+                                הפרויקט</a>
                         </div>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="images/screenshot projects/project5 screenshot.png" class="card-img-top" alt="...">
+                    <img src="./images/screenshot projects/project5 screenshot.png" class="card-img-top"
+                        alt="screenshot image">
                     <div class="card-body">
                         <h5 class="card-title text-center">לגלות את העולם</h5>
                         <p class="card-text">טיולים וחוויות מסביב לעולם</p>
                         <div class="d-grid gap-2">
-                            <a href="projects pages/project5 page/index.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                            <a href="./projects pages/project5 page/index.html" class="btn btn-primary">לעמוד
+                                הפרויקט</a>
                         </div>
 
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="images/screenshot projects/project6 screenshot.png" class="card-img-top" alt="...">
+                    <img src="./images/screenshot projects/project6 screenshot.png" class="card-img-top"
+                        alt="screenshot image">
                     <div class="card-body">
                         <h5 class="card-title text-center">ייעוץ חינם</h5>
                         <p class="card-text">התייעצו עם מומחה וקבלו מענה מידי</p>
                         <div class="d-grid gap-2">
-                            <a href="projects pages/project6 page/index.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                            <a href="./projects pages/project6 page/index.html" class="btn btn-primary">לעמוד
+                                הפרויקט</a>
                         </div>
                     </div>
                 </div>
@@ -191,8 +203,11 @@
                     <button type="submit" value="Submit">שליחה</button>
                 </div>
             </form>
-        </div><!-- container img -->
-
+        </div>
+        <!-- container img -->
+        <div class="container-img">
+            <img src="./images/chat.png" alt="Chat speech bubbles">
+        </div>
     </section>
 
     <!-- footer-social networks-icons  -->
@@ -207,12 +222,16 @@
         </div>
     </footer>
     <div class="frame">
-        <div class="frameBottom">
+        <div class="frame-bottom ">
             <p>כל הזכויות שמורות</p>
             <p>Navit Sason</p>
         </div>
     </div>
-
+    <script>
+        function myResume() {
+            alert("קובץ קורות חיים יצורף בהמשך");
+        }
+    </script>
 </body>
 
 </html>
