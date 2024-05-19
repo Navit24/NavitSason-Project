@@ -158,3 +158,137 @@ header .logo {
 .fram-bottom>p {
     color: #FFFFFF;
 }
+
+/* responsive to mobile */
+@media (max-width:768px) {
+
+
+    /* header of page */
+    header {
+        width: 100vw;
+        border-bottom: 2px solid #291C3A;
+    }
+
+    /* navigation bar */
+    header #navigation {
+        display: none;
+        width: 100vw;
+        background-color: #8121D0;
+        height: auto;
+        margin-top: 13.2em;
+        position: absolute;
+    }
+
+    header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.8em;
+        top: 0.8em;
+        font-size: 20px;
+        height: auto;
+        width: 100vw;
+    }
+
+    header #navigation a {
+        font: normal normal bold 16px/24px Heebo;
+        color: #FFFFFF;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    /* my logo and name */
+    header .logo {
+        width: 90vw;
+    }
+
+    .logo .img-logo>a .img2 {
+        width: 30px;
+        height: 30px;
+        margin-top: 0.2em;
+    }
+
+    .logo .img-logo>a .img1 {
+        width: 150px;
+        margin-top: 0.2em;
+    }
+
+    /* Opening area */
+    .opening {
+        width: 100vw;
+        height: 400px;
+        /* text-align: center; */
+    }
+
+    .opening>h1 {
+        font: normal normal 900 46px/67px Heebo;
+        padding: 10px;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    .opening>p {
+        width: 80%;
+        text-align: center;
+        font: normal normal medium 15px/25px Heebo;
+        color: #FFFFFF;
+    }
+
+    /* icons of my skills */
+    .skills-icons {
+        width: 100vw;
+    }
+
+    .skills-icons img {
+        width: 50px;
+    }
+
+    /*buttons */
+    .buttons {
+        gap: 1em;
+    }
+
+    .btns {
+        width: 40vw;
+        height: 4.5vh;
+        font: normal normal medium 12px/22px Heebo;
+    }
+
+
+
+    /* screenshot image area */
+    .example img {
+        width: 80vw;
+        height: 180px;
+        margin: auto;
+        margin-top: 3em;
+        box-shadow: 0 0 10px #00000067;
+    }
+
+    .example {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100vw;
+        height: 60vh;
+        background-color: #E1EBED;
+    }
+
+    .fram-bottom {
+        width: 100vw;
+        height: 15px;
+        background-color: #291C3A;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fram-bottom>p {
+        font: normal normal 300 9px/13px Heebo;
+    }
+
+}

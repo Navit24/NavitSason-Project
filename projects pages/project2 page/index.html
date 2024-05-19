@@ -22,26 +22,32 @@
     <link rel="icon" href="../../images/Navit Sason purple logo.png">
 
     <!-- hyperlink to style css -->
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/stylePages.css">
 </head>
 
 <body>
     <!-- header of page -->
     <header>
+        <!-- icon menu for mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i style="color: aliceblue;" class="fa fa-bars"></i>
+        </a>
+
         <!-- navigation bar -->
-        <nav class="navigation">
+        <nav id="navigation">
             <a href="../../index.html">ראשי</a>
-            <a href="#">אודות</a>
-            <a href="#">עבודות</a>
-            <a href="#">צור קשר</a>
+            <a href="../../index.html#jump-link-about">אודות</a>
+            <a href="../../index.html#jump-link-project">עבודות</a>
+            <a href="../../index.html#jump-link-contact">צור קשר</a>
         </nav>
 
 
         <!-- my logo and name -->
         <div class="logo">
             <div class="img-logo">
-                <a href="#"><img class="img1" src="../../images/my name.png" alt="my name"></a>
-                <a href="#"><img class="img2" src="../../images/Navit Sason white logo.png" alt="white logo"></a>
+                <a href="../../index.html"><img class="img1" src="../../images/my name.png" alt="my name"></a>
+                <a href="../../index.html"><img class="img2" src="../../images/Navit Sason white logo.png"
+                        alt="white logo"></a>
             </div>
         </div>
 
@@ -51,10 +57,14 @@
     <!-- Opening area -->
     <section class="opening">
         <h1>Here & Now</h1>
-<p>בואו להנות משלל מתנות מקוריות</p>
+        <p>בואו להנות משלל מתנות מקוריות</p>
         <!-- buttons -->
         <div class="buttons">
-            <button class="btns btn-download">להורדת הפרויקט >></button>
+            <a href="../../projects/‏‏projectName2/‏‏projectName2.rar"
+                download="../../projects/‏‏projectName2/‏‏projectName2.rar"><button class="btns btn-download">להורדת
+                    הפרויקט
+                    >></button>
+            </a>
             <a href="../../projects/‏‏projectName2/index.html" target="_blank"><button class="btns btn-watch">לצפייה
                     בפרויקט
                     >></button></a>
@@ -81,7 +91,17 @@
             <p>Navit Sason</p>
         </div>
     </div>
-
+    
+    <script>
+        function hamburger() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

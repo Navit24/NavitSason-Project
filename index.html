@@ -28,20 +28,27 @@
 <body>
     <!-- header of page -->
     <header>
+
+        <!-- icon menu for mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i style="color: aliceblue;" class="fa fa-bars"></i>
+        </a>
+        
         <!-- navigation bar -->
-        <nav class="navigation">
+        <nav id="navigation">
             <a href="./index.html">ראשי</a>
-            <a href="#">אודות</a>
-            <a href="#">עבודות</a>
-            <a href="#">צור קשר</a>
+            <a href="./index.html#jump-link-about">אודות</a>
+            <a href="./index.html#jump-link-project">עבודות</a>
+            <a href="./index.html#jump-link-contact">צור קשר</a>
         </nav>
+
 
 
         <!-- my logo and name -->
         <div class="logo">
             <div class="img-logo">
-                <a href="index.html"><img class="img1" src="./images/my name.png" alt="my name"></a>
-                <a href="index.html"><img class="img2" src="./images/Navit Sason white logo.png" alt="white logo"></a>
+                <a href="./index.html"><img class="img1" src="./images/my name.png" alt="my name"></a>
+                <a href="./index.html"><img class="img2" src="./images/Navit Sason white logo.png" alt="white logo"></a>
             </div>
         </div>
 
@@ -65,34 +72,34 @@
     </aside>
 
     <!-- about me area -->
-    <section class="about">
+    <section id="jump-link-about" class="about">
         <img src="./images/Navit Sason purple logo.png" alt="purple logo">
-        <h1>קצת עלי</h1>
-        <p>המסע שלי בפיתוח אתרים התחיל כשגיליתי את התשוקה שלי לקידוד ועיצוב במהלך השנים. מאז שקעתי בשפות תכנות שונות,
-            כולל HTML,
-            CSS, JavaScript ועוד. אני מצליחה להישאר מעודכן בטכנולוגיות ובטרנדים העדכניים ביותר בתעשייה כדי להבטיח
-            שהפרויקטים שלי
-            יהיו תמיד מתקדמים.
-        </p>
-        <p>אחת החוזקות שלי טמונה ביכולת שלי לתרגם רעיונות מורכבים לממשקים פשוטים ואינטואיטיביים. בין אם אני עובדת על
-            פרויקט אישי או
-            משתף פעולה עם צוות, אני תמיד נותן עדיפות לחוויית משתמש ונגישות כדי ליצור אתרים שמעסיקים ומשמחים משתמשים.
-        </p>
+        <h2>קצת עלי</h2>
+        <p>שלום! שמי נאוית, ואני מפתחת אתרים עם תשוקה גדולה לטכנולוגיה וליצירת חוויות משתמש מצוינות. עם X של ניסיון
+            בתחום, צברתי
+            ידע רחב ועמוק בטכנולוגיות ובשפות תכנות רבות כגון HTML, CSS, JavaScript, ועוד.
+            המסע שלי לתחום פיתוח אתרים התחיל כאשר גיליתי את האהבה שלי למחשבים ולפתרון בעיות בכל תחום בו
+            התעסקתי. מאז ועד
+            היום אני שוקדת על הרחבת הידע שלי ולהיות מעודכנת בכל העדכונים והחידושים האחרונים בתחום.</p>
+        <p>אני מפתחת פרואקטיבית ושימת לב לפרטים הקטנים, שנהנית לפתור בעיות מורכבות וללמוד טכנולוגיות חדשות. היכולת שלי
+            להסתגל והאהבה שלי לקוד מניעים אותי להמשיך לשפר את
+            המיומנויות שלי
+            ולספק פתרונות ווב מעולים.</p>
 
         <!-- Resume download button -->
         <button onclick="myResume()" class="btn-download">להורדת קורות חיים</button>
     </section>
 
     <!-- My project gallery-->
-    <main class="container-projects">
+    <main id="jump-link-project" class="container-projects">
         <div class="gallery-title">
-            <h1>עבודות נבחרות</h1>
+            <h3>עבודות נבחרות</h3>
             <p>בתיק העבודות שלי תמצאו דפי נחיתה שבניתי נבחרים ומגוונים, המשלבים עיצוב מודרני, חוויות משתמש מעולות וקוד
                 נקי ויעיל.</p>
         </div>
         <div class="container">
-            <section class="d-flex justify-content-evenly my-4">
-                <div class="card" style="width: 18rem;">
+            <section class="d-flex justify-content-evenly">
+                <div class="card">
                     <img src="./images/screenshot projects/project1 screenshot.png" class="card-img-top"
                         alt="screenshot image">
                     <div class="card-body">
@@ -104,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="./images/screenshot projects/project2 screenshot.png" class="card-img-top"
                         alt="screenshot image">
                     <div class="card-body">
@@ -116,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="./images/screenshot projects/project3 screenshot.png" class="card-img-top"
                         alt="screenshot image">
                     <div class="card-body">
@@ -130,7 +137,7 @@
                 </div>
             </section>
             <section class="d-flex justify-content-evenly">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="./images/screenshot projects/project4 screenshot.png" class="card-img-top"
                         alt="screenshot image">
                     <div class="card-body">
@@ -142,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="./images/screenshot projects/project5 screenshot.png" class="card-img-top"
                         alt="screenshot image">
                     <div class="card-body">
@@ -155,7 +162,7 @@
 
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="./images/screenshot projects/project6 screenshot.png" class="card-img-top"
                         alt="screenshot image">
                     <div class="card-body">
@@ -173,12 +180,12 @@
 
 
     <!-- contant us form -->
-    <section class="container-contant">
+    <section id="jump-link-contact" class="container-contant">
         <div class="container-form">
 
             <!-- title of the form -->
             <div class="container-form-title">
-                <h1>צור קשר והגשם את החזון הדיגיטלי שלך!</h1>
+                <h4>צור קשר והגשם את החזון הדיגיטלי שלך!</h4>
             </div>
 
             <!-- form -->
@@ -213,12 +220,12 @@
     <!-- footer-social networks-icons  -->
     <footer>
         <div class="social-networks">
-            <a href="#" class="fa fa-phone"></a>
+            <a href="tel:052-6981435" class="fa fa-phone"></a>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-map"></a>
-            <a href="#" class="fa fa-comment"></a>
+            <a href="https://www.facebook.com/?locale=he_IL" class="fa fa-facebook"></a>
+            <a href="https://maps.app.goo.gl/1wK2FPV1dwKTjbVeA" class="fa fa-map"></a>
+            <a href="mailto: url.navitsason@gmail.com" class="fa fa-envelope"></a>
         </div>
     </footer>
     <div class="frame">
@@ -231,6 +238,16 @@
         function myResume() {
             alert("קובץ קורות חיים יצורף בהמשך");
         }
+
+        function hamburger() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
     </script>
 </body>
 

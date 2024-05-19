@@ -22,14 +22,17 @@ header {
 }
 
 /* navigation bar */
-header .navigation {
+header #navigation {
     display: flex;
     flex-direction: row;
     width: 30vw;
-
 }
 
-header .navigation a {
+header a.icon {
+    display: none;
+}
+
+header #navigation a {
     font: normal normal bold 16px/24px Heebo;
     color: #FFFFFF;
     text-align: center;
@@ -38,7 +41,8 @@ header .navigation a {
     padding: 20px;
 }
 
-header .navigation a:hover {
+
+header #navigation a:hover {
     background-color: #6d1caf;
 }
 
@@ -120,7 +124,7 @@ header .logo {
     background-color: #E1EBED;
 }
 
-.about>h1 {
+.about>h2 {
     font: normal normal 900 35px/52px Heebo;
     color: #331C52;
     padding-top: 10px;
@@ -167,7 +171,7 @@ header .logo {
     margin-top: 5em;
 }
 
-.gallery-title>h1 {
+.gallery-title>h3 {
     font: normal normal 900 35px/52px Heebo;
     color: #331C52;
 }
@@ -178,6 +182,10 @@ header .logo {
     width: 50%;
 }
 
+main .container section {
+    margin-top: 3em;
+}
+
 .container {
     width: 65vw;
 }
@@ -186,6 +194,7 @@ header .logo {
     border: 0;
     background-color: #DCCFED;
     box-shadow: 0 0 5px #00000067;
+    width: 18rem;
 }
 
 .card-img-top {
@@ -202,8 +211,6 @@ header .logo {
 .card-body>p {
     font: normal normal medium 20px/30px Heebo;
 }
-
-
 
 /* button for page project */
 .btn {
@@ -241,7 +248,7 @@ header .logo {
     width: 60%;
 }
 
-.container-form-title>h1 {
+.container-form-title>h4 {
     font: normal normal 900 35px/52px Heebo;
     color: #331C52;
     padding: 20px;
@@ -298,7 +305,7 @@ textarea {
 } */
 
 .container-img>img {
-margin: 6em 0;
+    margin: 6em 0;
 }
 
 /* footer */
@@ -350,4 +357,280 @@ footer .social-networks .fa:hover {
 
 .frame-bottom>p {
     color: #FFFFFF;
+}
+
+/* responsive to mobile */
+@media (max-width:768px) {
+
+    /* header of page */
+    header {
+        width: 100vw;
+        border-bottom: 2px solid #291C3A;
+    }
+
+    /* navigation bar */
+    header #navigation {
+        display: none;
+        width: 100vw;
+        background-color: #8121D0;
+        height: auto;
+        margin-top: 13.2em;
+        position: absolute;
+    }
+
+    /* icon menu for mobile */
+    header a.icon {
+        display: block;
+        position: absolute;
+        right: 0.8em;
+        top: 0.8em;
+        font-size: 20px;
+        height: auto;
+        width: 100vw;
+    }
+
+    header #navigation a {
+        font: normal normal bold 16px/24px Heebo;
+        color: #FFFFFF;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    /* my logo and name */
+    header .logo {
+        width: 90vw;
+    }
+
+    .logo .img-logo>a .img2 {
+        width: 30px;
+        height: 30px;
+        margin-top: 0.2em;
+    }
+
+    .logo .img-logo>a .img1 {
+        width: 150px;
+        margin-top: 0.2em;
+    }
+
+    /* Opening area */
+    .opening {
+        width: 100vw;
+        height: 350px;
+        /* text-align: center; */
+    }
+
+    .opening>h1 {
+        font: normal normal 900 46px/67px Heebo;
+        padding: 20px;
+    }
+
+    .opening>p {
+        width: 80%;
+        text-align: center;
+        font: normal normal medium 15px/25px Heebo;
+        color: #FFFFFF;
+    }
+
+    /* icons of my skills */
+    .skills-icons {
+        width: 100vw;
+    }
+
+    .skills-icons img {
+        width: 50px;
+    }
+
+    /* about me area */
+    .about img {
+        width: 15vw;
+    }
+
+    .about {
+        width: 100vw;
+        height: 700px;
+    }
+
+    .about>h2 {
+        font: normal normal 900 25px/37px Heebo;
+        padding-top: 10px;
+    }
+
+    .about>p {
+        width: 80%;
+        font: normal normal normal 15px/22px Heebo;
+        padding: 10px;
+    }
+
+    /* Resume download button */
+    .btn-download {
+        width: 40vw;
+        height: 4vh;
+        font: normal normal bold 14px/22px Heebo;
+    }
+
+    /* My project gallery */
+    .container-projects {
+        height: auto;
+    }
+
+    .gallery-title {
+        width: 100vw;
+        margin-top: 5em;
+    }
+
+    .gallery-title>h3 {
+        font: normal normal 900 25px/37px Heebo;
+    }
+
+    .gallery-title>p {
+        font: normal normal normal 15px/22px Heebo;
+        width: 80%;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .card {
+        margin: auto;
+        margin-bottom: 1.5em;
+        width: 90vw;
+    }
+
+    main .container section {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .card-body>h5 {
+        font: normal normal medium 16px/24px Heebo;
+    }
+
+    .card-body>p {
+        font: normal normal normal 16px/24px Heebo;
+        text-align: center;
+    }
+
+    /* contant us form */
+    .container-contant {
+        width: 100vw;
+        height: 550px;
+    }
+
+    .container-form {
+        width: 90vw;
+        margin: auto;
+    }
+
+    /* title of the form  */
+    .container-form-title {
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .container-form-title>h4 {
+        font: normal normal 900 25px/37px Heebo;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* form */
+    form .form-contant {
+        display: flex;
+        flex-direction: column;
+        margin: 0.3em 0;
+    }
+
+    form .form-contant>label {
+        font: normal normal bold 12px/18px Heebo;
+        text-align: right;
+    }
+
+
+    form .form-contant>input {
+        width: 310px;
+        height: 35px;
+        border-radius: 0.3em;
+    }
+
+    textarea {
+        width: 310px;
+        height: 60px;
+        border-radius: 0.3em;
+    }
+
+    /* button submit */
+    .buttom-submit>button {
+        width: 310px;
+        height: 5vh;
+        font: normal normal bold 14px/22px Heebo;
+        border-radius: 0.3em;
+        margin: 1em 0;
+    }
+
+    /* .container-img {
+        display: flex;
+        justify-content: center;
+    } */
+
+    .container-img>img {
+        margin: 0;
+        width: 185px;
+        height: 161px;
+        display: none;
+    }
+
+    /* footer */
+    footer {
+        width: 100vw;
+        height: 160px;
+    }
+
+    /* social networks */
+    footer .social-networks {
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
+    }
+
+    /* social networks-icons */
+    footer .social-networks .fa {
+        width: 45px;
+        height: 45px;
+        background-color: #b3a8c3;
+        color: #331C52;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0.2em;
+        border-radius: 50%;
+    }
+
+
+    footer .social-networks .fa:hover {
+        opacity: 0.6;
+    }
+
+    /* .frame {} */
+
+    .frame-bottom {
+        width: 100vw;
+        height: 15px;
+        background-color: #291C3A;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .frame-bottom>p {
+        font: normal normal 300 9px/13px Heebo;
+    }
+
 }

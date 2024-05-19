@@ -79,3 +79,67 @@ form .form-control>label {
     margin-top: auto;
 }
 
+/* responsive to mobile */
+@media(max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* img of background */
+    .container-backgroud>img {
+        width: 100vw;
+        height: 300px;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /* title of the form  */
+    .container-title {
+        width: 90%;
+        height: 300px;
+        z-index: 2;
+        margin: auto;
+    }
+
+    .container-title>h1 {
+        font: normal normal bold 28px/33px Assistant;
+    }
+
+    .container-title>p {
+        width: 90%;
+        font: normal normal normal 15px/22px Assistant;
+        text-align: center;
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 0;
+        margin: auto;
+        margin-top: 4em;
+    }
+
+    form .form-control {
+        margin: 1em 0;
+    }
+
+
+    form .form-control>label {
+        font: normal normal bold 10px/14px Heebo;
+    }
+
+    .form-control>input {
+        width: 286px;
+        height: 34px;
+    }
+
+
+    /* button submit */
+    .buttom-submit>button {
+        width: 286px;
+        height: 34px;
+        font: normal normal bold 14px/19px Heebo;
+    }
+}
