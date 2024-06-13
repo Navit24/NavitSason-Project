@@ -23,13 +23,16 @@ header {
 }
 
 /* navigation bar */
-header .navigation {
+header #navigation {
     display: flex;
     flex-direction: row;
     width: 30vw;
 }
+header a.icon {
+    display: none;
+} 
 
-header .navigation a {
+header #navigation a {
     font: normal normal bold 16px/24px Heebo;
     color: #FFFFFF;
     text-align: center;
