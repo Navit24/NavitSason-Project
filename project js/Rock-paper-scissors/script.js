@@ -77,9 +77,10 @@ function playGame(playerChoice) {
         }, 700);
     }, 500);
 
+    
+    // הצגת התוצאה לאחר עיכוב של 500ms
     setTimeout(() => {
-        resultDisplay.textContent = result; // הצגת התוצאה על המסך
-
+        resultDisplay.textContent = result;  // הצגת התוצאה על המסך
         // קביעת עיצוב התוצאה לפי התוצאה
         if (result === "YOU WIN!") {
             resultDisplay.style.color = 'green';
@@ -90,15 +91,6 @@ function playGame(playerChoice) {
         } else {
             resultDisplay.style.color = 'black';
         }
-
-        // השמעת צליל בהתאם לתוצאה
-        playSound(result);
-    }, 500); // הצגת התוצאה לאחר 500ms
-
-
-    // הצגת התוצאה לאחר עיכוב של 500ms
-    setTimeout(() => {
-        resultDisplay.textContent = result;  // הצגת התוצאה על המסך
         playSound(result); // השמעת צליל בהתאם לתוצאה
     }, 500);
 }
