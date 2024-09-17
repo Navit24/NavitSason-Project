@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(172, 191, 173) !important;
+}
+
+/* responsive to mobile */
+@media (max-width:768px) {
+    body {
+        min-height: 75vh;
+
+    }
+
+    button {
+        margin-top: 1.2rem !important;
+    }
+}

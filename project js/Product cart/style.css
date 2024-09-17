@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: inter, Calibri, sans-serif;
+
+}
+
+/* ברירת מחדל עבור כרטיסי תוכן (לא מוצג) */
+#card {
+    display: none;
+}
+
+/* responsive to mobile */
+@media (max-width:768px) {
+    body {
+        min-height: 75vh;
+
+    }
+
+    input {
+        margin-top: 30px;
+    }
+
+    /* הסתרת הטבלה במובייל */
+    table {
+        display: none;
+    }
+
+    /* הצגת הכרטיס ושינוי רוחב בתצוגת מובייל */
+    #card {
+        display: block;
+        width: 100vw;
+    }
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* אפקט פלאש עבור האנימציה */
+.flash {
+    animation: flash-animation 0.7s;
+    /* הפעלת אנימציה */
+}
+
+/* אנימציה של פלאש */
+@keyframes flash-animation {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* עיצוב לניצחון */
+.win {
+    color: #28a745;
+    /* צבע ירוק לניצחון */
+    font-size: 2em;
+    /* גודל גופן גדול יותר */
+}
+
+/* עיצוב להפסד */
+.lose {
+    color: #dc3545;
+    /* צבע אדום להפסד */
+    font-size: 2em;
+    /* גודל גופן גדול יותר */
+}
+
+/* עיצוב לניקוי התוצאה (תיקו) */
+.tie {
+    color: #6c757d;
+    /* צבע אפור לתיקו */
+    font-size: 1.5em;
+    /* גודל גופן רגיל */
+}
+
+
+/* responsive to mobile */
+@media (max-width:768px) {
+    body {
+        min-height: 75vh;
+
+    }
+
+    button {
+        margin-top: 1.2rem !important;
+    }
+}

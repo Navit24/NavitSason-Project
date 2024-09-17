@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navit Sason Project | Weather API </title>
+
+    <!--  hyperlink to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- hyperlink to font Heebo  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icon library-font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- hyperlink to logo -->
+    <link rel="icon" href="../../images/Navit Sason purple logo.png">
+
+    <!-- hyperlink to style css -->
+    <link rel="stylesheet" href="../style/stylePages.css">
+</head>
+
+<body>
+    <!-- header of page -->
+    <header>
+        <!-- icon menu for mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i style="color: aliceblue;" class="fa fa-bars"></i>
+        </a>
+
+        <!-- navigation bar -->
+        <nav id="navigation">
+            <a href="../../index.html">ראשי</a>
+            <a href="../../index.html#jump-link-about">אודות</a>
+            <a href="../../index.html#jump-link-project">עבודות</a>
+            <a href="../../index.html#jump-link-contact">צור קשר</a>
+        </nav>
+
+
+        <!-- my logo and name -->
+        <div class="logo">
+            <div class="img-logo">
+                <a href="../../index.html"><img class="img1" src="../../images/my name.png" alt="my name"></a>
+                <a href="../../index.html"><img class="img2" src="../../images/Navit Sason white logo.png"
+                        alt="white logo"></a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Opening area -->
+    <section class="opening">
+        <h1>Weather API</h1>
+        <p>תחזית מזג האוויר עם נתונים מעודכנים</p>
+        <!-- buttons -->
+        <div class="buttons">
+            <a href="../../project js/Weather API/Weather API.rar"
+                download="../../project js/Weather API/Weather API.rar"><button class="btns btn-download">להורדת
+                    הפרויקט
+                    >></button>
+            </a>
+            <a href="../../project js/Weather API/index.html" target="_blank"><button class="btns btn-watch">לצפייה
+                    בפרויקט
+                    >></button></a>
+
+        </div>
+    </section>
+
+    <!-- icons of my skills -->
+    <aside class="skills-icons">
+        <img src="../../images/icons of skills/html.png" alt="html icon">
+        <img src="../../images/icons of skills/css.png" alt="css icon">
+        <img src="../../images/icons of skills/sass.png" alt="sass icon">
+        <img src="../../images/icons of skills/bootstrap.png" alt="bootstrap icon">
+        <img src="../../images/icons of skills/vs code.png" alt="vs code icon">
+    </aside>
+
+    <!-- example screenshot image area -->
+    <main class="example">
+        <img src="../../images/screenshot projects js/Weather API.png" alt="screenshot image">
+    </main>
+    <div class="frame">
+        <div class="fram-bottom">
+            <p>כל הזכויות שמורות</p>
+            <p>Navit Sason</p>
+        </div>
+    </div>
+
+    <script>
+        function hamburger() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

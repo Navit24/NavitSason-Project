@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Link to font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- link to logo -->
+    <link rel="icon" href="./images/calculator logo.png">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container w-50">
+        <h1 class="display-1 text-center">CALCULATOR</h1>
+
+        <!-- שורת הקלט והכפתור לניקוי -->
+        <div class="row">
+            <div class="col-9 col-sm-9">
+                <input type="text" class="form-control fs-4 m-1" id="result" /> <!-- שדה התוצאה -->
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="clearInput()" class="btn btn-dark w-100 fs-4 m-1"> <!-- כפתור ניקוי -->
+                    c
+                </button>
+            </div>
+        </div>
+
+        <!-- שורת המספרים 1-3 והכפתור לחילוק -->
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1 m-0" onclick="addChar('1')">
+                    1
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1 " onclick="addChar('2')">
+                    2
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1 " onclick="addChar('3')">
+                    3
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-primary w-100 p-3  fs-4 m-1" onclick="addChar('/')">
+                    ÷
+                </button>
+            </div>
+        </div>
+
+        <!-- שורת המספרים 4-6 והכפתור לכפל -->
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('4')">
+                    4
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('5')">
+                    5
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('6')">
+                    6
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-primary w-100 p-3  fs-4 m-1" onclick="addChar('*')">
+                    x
+                </button>
+            </div>
+        </div>
+
+        <!-- שורת המספרים 7-9 והכפתור לחיסור -->
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('7')">
+                    7
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('8')">
+                    8
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('9')">
+                    9
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-primary w-100 p-3  fs-4 m-1" onclick="addChar('-')">
+                    -
+                </button>
+            </div>
+        </div>
+
+        <!-- שורת המספר 0, נקודה עשרונית, כפתור תוצאה וחיבור -->
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('0')">
+                    0
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-success w-100 p-3  fs-4 m-1" onclick="addChar('.')">
+                    .
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-warning w-100 p-3  fs-4 m-1" onclick="showResult()">
+                    =
+                </button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button class="btn btn-primary w-100 p-3  fs-4 m-1" onclick="addChar('+')">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <!-- link to JavaScript -->
+        <script src="./script.js"></script>
+</body>

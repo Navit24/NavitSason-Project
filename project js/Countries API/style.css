@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./images/map\ image.jpg");
+}
+
+/* responsive to mobile */
+@media (max-width:768px) {
+    body {
+        min-height: 75vh;
+    }
+
+    h3 {
+        font-size: 2rem !important;
+    }
+}
